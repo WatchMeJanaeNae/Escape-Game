@@ -1,0 +1,46 @@
+[MASTER]
+# Ignore test directories
+ignore-paths=^.*/test/.*$,
+             ^.*/tests/.*
+
+[MESSAGES CONTROL]
+# Disable specific warnings:
+# C0114: Missing module docstring
+# C0115: Missing class docstring
+# C0116: Missing function or method docstring
+# C0103: Invalid name (for simple variable names like 'bmi')
+# R0903: Too few public methods
+# R0913: Too many arguments
+# R0914: Too many local variables
+# R0915: Too many statements
+# C0304: Final newline missing
+# C0305: Trailing newlines
+# W1309: Using an f-string that does not have any interpolated variables
+# C0303: Trailing whitespace
+# R1716: Simplify chained comparison
+# R1722: Consider using sys.exit()
+# W0702: No exception type(s) specified
+# E0401: Unable to import (for module imports)
+disable=C0114,C0115,C0116,C0103,R0903,R0913,R0914,R0915,C0304,C0305,W1309,C0303,R1716,R1722,W0702,E0401
+
+[REPORTS]
+output-format=text
+reports=no
+
+[DESIGN]
+# Allow up to 10 arguments for functions (useful for complex functions)
+max-args=10
+# Allow up to 10 attributes
+max-attributes=10
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=120
+
+[BASIC]
+# Good variable names which should always be accepted
+good-names=i,j,k,ex,Run,_,bmi,kg,m,ft,lb
+
+[REFACTORING]
+# Maximum number of nested blocks for function / method
+max-nested-blocks=5
